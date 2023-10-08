@@ -1,0 +1,17 @@
+.imageUpload {
+    width: 100%;
+    background-color: lightgray;
+    background-image: linear-gradient(#fafafa,10%, lightgray);
+}
+.imageUpload__contents {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 10px auto;
+    background-image: linear-gradient(#fafafa,10%, lightgray);
+    padding: 20px 10px 10px;
+}
+
+.imageUpload__progress {
+    width: 100%;
+}

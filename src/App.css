@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+.app{
+    background-color: #fafafa;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app__header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #fff;
+    object-fit: contain;
+    padding: 20px;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.app__header > img {
+    object-fit: contain;
+}
+.app__headerSearch{
+    display: flex;
+    align-items: center;
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 10px;
+}
+.app__headerSearch > input {
+    outline: none;
+    border: none;
+    font-size: 16px;
+}
+.app__headerIcon {
+    color: gray;
+    font-size: 20px !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+
+
+.paper {
+    position: absolute;
+    width: 400px;
+    border: 2px solid #000;
+    background-color: #fff;
+    padding: 25px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.app__signUp {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.app__posts {
+    padding: 20px;
+    display: grid;
+    justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

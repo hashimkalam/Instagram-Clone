@@ -1,0 +1,37 @@
+.stories {
+  display: flex;
+  align-items: center;
+  overflow-x: auto; /* Add a horizontal scrollbar if content overflows */
+  margin: 2px 10px;
+}
+
+.stories__contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  text-align: center; /* Center text horizontally */
+}
+
+.stories__contents > img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid gray;
+}
+
+.stories__contents h3 {
+  margin-top: 8px;
+}
+
+/* Hide the default scrollbar and style the track */
+.stories::-webkit-scrollbar {
+  height: 5px; /* Height of the scrollbar */
+}
+
+.stories::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track color */
+}
+
+.stories::-webkit-scrollbar-thumb {
+  background: #888; /* Thumb color */
+}
